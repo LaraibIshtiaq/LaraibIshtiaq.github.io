@@ -10,20 +10,20 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="nav-content">
-                <a href="#home" class="logo">Laraib Ishtiaq</a>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-                <div class="menu-btn">
+        <div class="container">
+            <nav>
+                <div class="logo">Laraib Ishtiaq</div>
+                <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
-            </div>
-        </nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -57,75 +57,36 @@
                     <div class="about-text">
                         <p>I'm a passionate Flutter developer and Kotlin Multiplatform (KMM) expert with a strong focus on creating beautiful, performant, and maintainable mobile applications. With extensive experience in both Flutter and native Android development, I specialize in building cross-platform solutions that deliver exceptional user experiences.</p>
                     </div>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h4>Mobile Development</h4>
-                            <div class="tech-stack">
-                                <div class="tech-icon">
-                                    <i class="fas fa-mobile-screen"></i>
-                                    <span>Flutter</span>
-                                </div>
-                                <div class="tech-icon">
-                                    <i class="fas fa-code"></i>
-                                    <span>Dart</span>
-                                </div>
-                                <div class="tech-icon">
-                                    <i class="fab fa-android"></i>
-                                    <span>Android</span>
-                                </div>
-                                <div class="tech-icon">
-                                    <i class="fas fa-code"></i>
-                                    <span>Kotlin</span>
-                                </div>
-                                <div class="tech-icon">
-                                    <i class="fas fa-mobile-alt"></i>
-                                    <span>Jetpack Compose</span>
-                                </div>
-                                <div class="tech-icon">
-                                    <i class="fas fa-code-branch"></i>
-                                    <span>KMP</span>
+                    <!-- Desktop/Tablet Skills Cards -->
+                    <div class="skills-cards">
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Mobile Development</h4>
+                                <div class="tech-stack">
+                                    <div class="tech-icon"><i class="fab fa-flutter"></i><span>Flutter</span></div>
+                                    <div class="tech-icon"><i class="fas fa-code"></i><span>Dart</span></div>
+                                    <div class="tech-icon"><i class="fab fa-android"></i><span>Android</span></div>
+                                    <div class="tech-icon"><i class="fas fa-code"></i><span>Kotlin</span></div>
+                                    <div class="tech-icon"><i class="fas fa-mobile-alt"></i><span>Jetpack Compose</span></div>
+                                    <div class="tech-icon"><i class="fas fa-code-branch"></i><span>KMP</span></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Backend & Architecture</h4>
-                            <div class="tech-stack">
-                                <div class="tech-icon">
-                                    <i class="fas fa-fire"></i>
-                                    <span>Firebase</span>
-                                </div>
-                                <div class="tech-icon">
-                                    <i class="fas fa-server"></i>
-                                    <span>REST API</span>
-                                </div>
-                                <div class="tech-icon">
-                                    <i class="fas fa-sitemap"></i>
-                                    <span>Clean Architecture</span>
-                                </div>
-                                <div class="tech-icon">
-                                    <i class="fas fa-server"></i>
-                                    <span>Ktor</span>
-                                </div>
-                                <div class="tech-icon">
-                                    <i class="fas fa-shield-alt"></i>
-                                    <span>Security</span>
+                            <div class="skill-category">
+                                <h4>Backend & Architecture</h4>
+                                <div class="tech-stack">
+                                    <div class="tech-icon"><i class="fas fa-fire"></i><span>Firebase</span></div>
+                                    <div class="tech-icon"><i class="fas fa-server"></i><span>REST API</span></div>
+                                    <div class="tech-icon"><i class="fas fa-sitemap"></i><span>Clean Architecture</span></div>
+                                    <div class="tech-icon"><i class="fas fa-server"></i><span>Ktor</span></div>
+                                    <div class="tech-icon"><i class="fas fa-shield-alt"></i><span>Security</span></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Tools & State Management</h4>
-                            <div class="tech-stack">
-                                <div class="tech-icon">
-                                    <i class="fab fa-git-alt"></i>
-                                    <span>Git</span>
-                                </div>
-                                <div class="tech-icon">
-                                    <i class="fas fa-cogs"></i>
-                                    <span>Riverpod</span>
-                                </div>
-                                <div class="tech-icon">
-                                    <i class="fas fa-stream"></i>
-                                    <span>State Flow</span>
+                            <div class="skill-category">
+                                <h4>Tools & State Management</h4>
+                                <div class="tech-stack">
+                                    <div class="tech-icon"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                                    <div class="tech-icon"><i class="fas fa-cogs"></i><span>Riverpod</span></div>
+                                    <div class="tech-icon"><i class="fas fa-stream"></i><span>State Flow</span></div>
                                 </div>
                             </div>
                         </div>
@@ -133,57 +94,73 @@
                             <div class="skill-category">
                                 <h4>Soft Skills</h4>
                                 <div class="tech-stack">
-                                    <div class="tech-icon">
-                                        <i class="fas fa-puzzle-piece"></i>
-                                        <span>Problem Solving</span>
-                                    </div>
-                                    <div class="tech-icon">
-                                        <i class="fas fa-comments"></i>
-                                        <span>Communication</span>
-                                    </div>
-                                    <div class="tech-icon">
-                                        <i class="fas fa-users"></i>
-                                        <span>Team Collaboration</span>
-                                    </div>
-                                    <div class="tech-icon">
-                                        <i class="fas fa-handshake"></i>
-                                        <span>Collaboration</span>
-                                    </div>
-                                    <div class="tech-icon">
-                                        <i class="fas fa-user-tie"></i>
-                                        <span>Leadership</span>
-                                    </div>
-                                    <div class="tech-icon">
-                                        <i class="fas fa-chess"></i>
-                                        <span>Strategic Thinking</span>
-                                    </div>
+                                    <div class="tech-icon"><i class="fas fa-puzzle-piece"></i><span>Problem Solving</span></div>
+                                    <div class="tech-icon"><i class="fas fa-comments"></i><span>Communication</span></div>
+                                    <div class="tech-icon"><i class="fas fa-users"></i><span>Team Collaboration</span></div>
+                                    <div class="tech-icon"><i class="fas fa-handshake"></i><span>Collaboration</span></div>
+                                    <div class="tech-icon"><i class="fas fa-user-tie"></i><span>Leadership</span></div>
+                                    <div class="tech-icon"><i class="fas fa-chess"></i><span>Strategic Thinking</span></div>
                                 </div>
                             </div>
                             <div class="skill-category">
                                 <h4>Work Style</h4>
                                 <div class="tech-stack">
-                                    <div class="tech-icon">
-                                        <i class="fas fa-flag"></i>
-                                        <span>Strong Ownership</span>
-                                    </div>
-                                    <div class="tech-icon">
-                                        <i class="fas fa-lightbulb"></i>
-                                        <span>Problem Solver</span>
-                                    </div>
-                                    <div class="tech-icon">
-                                        <i class="fas fa-comments"></i>
-                                        <span>Clear Communication</span>
-                                    </div>
-                                    <div class="tech-icon">
-                                        <i class="fas fa-rocket"></i>
-                                        <span>Fast Learner</span>
-                                    </div>
-                                    <div class="tech-icon">
-                                        <i class="fas fa-users"></i>
-                                        <span>Team Player</span>
-                                    </div>
+                                    <div class="tech-icon"><i class="fas fa-flag"></i><span>Strong Ownership</span></div>
+                                    <div class="tech-icon"><i class="fas fa-lightbulb"></i><span>Problem Solver</span></div>
+                                    <div class="tech-icon"><i class="fas fa-comments"></i><span>Clear Communication</span></div>
+                                    <div class="tech-icon"><i class="fas fa-rocket"></i><span>Fast Learner</span></div>
+                                    <div class="tech-icon"><i class="fas fa-users"></i><span>Team Player</span></div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <!-- Mobile Skills Table -->
+                    <div class="skills-table">
+                        <div class="mobile-skills-grid">
+                            <div class="mobile-skill-category">
+                                <h3>Skills</h3>
+                                <table class="skill-list">
+                                    <tr><td>Flutter</td></tr>
+                                    <tr><td>Dart</td></tr>
+                                    <tr><td>Android</td></tr>
+                                    <tr><td>Kotlin</td></tr>
+                                    <tr><td>Jetpack Compose</td></tr>
+                                    <tr><td>KMP</td></tr>
+                                </table>
+                            </div>
+                            <div class="mobile-skill-category">
+                                <h3>Technologies</h3>
+                                <table class="skill-list">
+                                    <tr><td>Firebase</td></tr>
+                                    <tr><td>REST API</td></tr>
+                                    <tr><td>Clean Architecture</td></tr>
+                                    <tr><td>Ktor</td></tr>
+                                    <tr><td>Security</td></tr>
+                                    <tr><td>Git</td></tr>
+                                    <tr><td>Riverpod</td></tr>
+                                    <tr><td>State Flow</td></tr>
+                                </table>
+                            </div>
+                            <div class="mobile-skill-category">
+                                <h3>Soft Skills</h3>
+                                <table class="skill-list">
+                                    <tr><td>Problem Solving</td></tr>
+                                    <tr><td>Communication</td></tr>
+                                    <tr><td>Team Collaboration</td></tr>
+                                    <tr><td>Leadership</td></tr>
+                                    <tr><td>Strategic Thinking</td></tr>
+                                </table>
+                            </div>
+                            <div class="mobile-skill-category">
+                                <h3>Work Style</h3>
+                                <table class="skill-list">
+                                    <tr><td>Strong Ownership</td></tr>
+                                    <tr><td>Fast Learner</td></tr>
+                                    <tr><td>Attention to detail</td></tr>
+                                    <tr><td>Team Player</td></tr>
+                                </table>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -192,63 +169,57 @@
 
         <section id="projects" class="projects">
             <h2>Featured Projects</h2>
-            <div class="project-slider-container">
-                <button class="slider-nav prev" aria-label="Previous project">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="project-slider">
-                    <div class="project-card">
-                        <div class="project-images">
-                            <img src="project1_1.png" alt="Project 1 Screenshot 1">
-                            <img src="project1_2.png" alt="Project 1 Screenshot 2">
+            <div class="project-list">
+                <div class="project-card">
+                    <div class="project-images">
+                        <img src="project1_1.png" alt="Project 1 Screenshot 1">
+                        <img src="project1_2.png" alt="Project 1 Screenshot 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Feedback App</h3>
+                        <p>It is an app designed and developed to help ease customers to provider their valuable feedbacks to organisations,
+                            which is developed in Flutter supporting android, iOS and web.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/LaraibIshtiaq/feedback_system?tab=readme-ov-file" class="btn">Source Code</a>
                         </div>
-                        <div class="project-info">
-                            <h3>Feedback App</h3>
-                            <p>It is an app designed and developed to help ease customers to provider their valuable feedbacks to organisations,
-                                which is developed in Flutter supporting android, iOS and web.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-images">
+                        <img src="project2_1.png" alt="Project 2 Screenshot 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Land Surveying App</h3>
+                        <p>A Flutter-based mobile app designed to control high-precision outdoor robots
+                            for tasks like marking, measurement, and stake-out. It integrates
+                            real-time robot communication, map drawing tools, and coordinate
+                            projection handling (UTM ↔ WGS84) for seamless on-site operations.
+                            Tech Stack: Flutter, Google Maps, Proj4, Bluetooth, Custom Robotics SDK</p>
                             <div class="project-links">
                                 <a href="https://github.com/LaraibIshtiaq/feedback_system?tab=readme-ov-file" class="btn">Source Code</a>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-images">
-                            <img src="project2_1.png" alt="Project 1 Screenshot 1">
-                        </div>
-                        <div class="project-info">
-                            <h3>Land Surveying App</h3>
-                            <p>A Flutter-based mobile app designed to control high-precision outdoor robots
-                                for tasks like marking, measurement, and stake-out. It integrates
-                                real-time robot communication, map drawing tools, and coordinate
-                                projection handling (UTM ↔ WGS84) for seamless on-site operations.
-                                Tech Stack: Flutter, Google Maps, Proj4, Bluetooth, Custom Robotics SDK</p>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-images">
-                            <img src="project3_1.png" alt="Project 1 Screenshot 1">
-                            <img src="project3_2.png" alt="Project 1 Screenshot 1">
-                        </div>
-                        <div class="project-info">
-                            <h3>Retail Shelf Rental App</h3>
-                            <p>A native Android app built using Jetpack Compose and Kotlin, designed
-                                to help store owners manage and rent shelf space to vendors. The
-                                app streamlines rental tracking, shelf assignments, and vendor interactions.
-                                It features interactive charts and graphs for visualizing rental
-                                durations, earnings, and shelf occupancy trends—empowering users
-                                with actionable insights through a clean and modern UI.
-                                Tech Stack: Kotlin, Jetpack Compose, Android Architecture Components,
-                                MPAndroidChart</p>
-                        </div>
-                    </div>
-                    <!-- Add more project cards as needed -->
                 </div>
-                <button class="slider-nav next" aria-label="Next project">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-                <div class="slider-dots"></div>
+                <div class="project-card">
+                    <div class="project-images">
+                        <img src="project3_1.png" alt="Project 3 Screenshot 1">
+                        <img src="project3_2.png" alt="Project 3 Screenshot 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Retail Shelf Rental App</h3>
+                        <p>A native Android app built using Jetpack Compose and Kotlin, designed
+                            to help store owners manage and rent shelf space to vendors. The
+                            app streamlines rental tracking, shelf assignments, and vendor interactions.
+                            It features interactive charts and graphs for visualizing rental
+                            durations, earnings, and shelf occupancy trends—empowering users
+                            with actionable insights through a clean and modern UI.
+                            Tech Stack: Kotlin, Jetpack Compose, Android Architecture Components,
+                            MPAndroidChart</p>
+                            <div class="project-links">
+                                <a href="https://github.com/LaraibIshtiaq/feedback_system?tab=readme-ov-file" class="btn">Source Code</a>
+                            </div>
+                        </div>
+                </div>
             </div>
         </section>
 
