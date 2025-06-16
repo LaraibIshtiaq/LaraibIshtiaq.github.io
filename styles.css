@@ -14,6 +14,9 @@
     --section-bg: #f3f4f6;
     --gradient-start: #f0f9ff;
     --gradient-end: #e0f2fe;
+    --content-padding: 2rem;
+    --header-padding: 5rem;
+    --max-width: 1200px;
 }
 
 html {
@@ -44,9 +47,11 @@ header.scrolled {
 }
 
 .nav-content {
-    max-width: 1200px;
+    max-width: var(--max-width);
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1rem var(--header-padding);
+    width: 100%;
+    min-width: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,6 +64,7 @@ header.scrolled {
     text-decoration: none;
     position: relative;
     transition: color 0.3s ease;
+    margin-left: 2rem;
 }
 
 .logo::after {
@@ -80,6 +86,11 @@ header.scrolled {
     display: flex;
     list-style: none;
     gap: 2rem;
+    margin-right: 2rem;
+}
+
+.nav-links li:first-child {
+    margin-left: 2rem;
 }
 
 .nav-links a {
@@ -370,9 +381,9 @@ header.scrolled {
 }
 
 .about-content {
-    max-width: 1200px;
+    max-width: var(--max-width);
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 var(--content-padding);
 }
 
 .about-text {
@@ -915,6 +926,7 @@ footer {
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--text-color);
+    margin-left: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -1282,5 +1294,35 @@ footer {
     .mobile-skills-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+}
+
+.flutter-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+}
+
+/* Add consistent content padding */
+.about-content,
+.project-list,
+.side-projects-grid,
+.contact-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--content-padding);
+}
+
+@media (max-width: 768px) {
+    :root {
+        --content-padding: 1.5rem;
+        --header-padding: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --content-padding: 1rem;
+        --header-padding: 1.25rem;
     }
 } 
