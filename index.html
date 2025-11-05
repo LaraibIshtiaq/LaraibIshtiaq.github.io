@@ -7,44 +7,44 @@
     <title>Laraib - Mobile App Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Laraib Ishtiaq</div>
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Floating Particles -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
 
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
                 <div class="profile-container">
                     <div class="profile-image">
-                        <img src="profile.jpeg" alt="Laraib Ishtiaq" />
+                        <div class="profile-ring"></div>
+                        <img src="LaraibIshtiaq.jpeg" alt="Laraib Ishtiaq" />
                     </div>
                     <div class="profile-text">
-                        <h1>Hi, I'm Laraib 👋</h1>
-                        <h2>Flutter & Android Developer</h2>
-                        <p>
+                        <h1><span class="typing-text">Hi, I'm Laraib 👋</span></h1>
+                        <h2 class="gradient-text">Flutter & Android Developer</h2>
+                        <p class="fade-in-text">
                             I craft clean, efficient, and scalable mobile apps using <strong>Flutter</strong> and <strong>Android</strong>. 
-                            With 3+ years of experience, I specialize in building cross-platform applications that run seamlessly on Android, iOS, and even desktop.
+                            With 4+ years of experience, I specialize in building cross-platform applications that run seamlessly on Android, iOS, and even desktop.
                         </p>
                     
-                        <p>
+                        <p class="fade-in-text">
                             Let's build something amazing together.
                         </p>
-                        <a href="#projects" class="cta-button">View My Work</a>
                     </div>
                 </div>
             </div>
@@ -54,119 +54,33 @@
             <div class="container">
                 <h2>About Me</h2>
                 <div class="about-content">
+                    <div class="floating-graphic graphic-1">
+                        <i class="fab fa-flutter"></i>
+                    </div>
+                    <div class="floating-graphic graphic-2">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <div class="floating-graphic graphic-3">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="floating-graphic graphic-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="floating-graphic graphic-5">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <div class="floating-graphic graphic-6">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    
                     <div class="about-text">
-                        <p>I'm a passionate Flutter developer and Kotlin Multiplatform (KMM) expert with a strong focus on creating beautiful, performant, and maintainable mobile applications. With extensive experience in both Flutter and native Android development, I specialize in building cross-platform solutions that deliver exceptional user experiences.</p>
-                    </div>
-                    <!-- Desktop/Tablet Skills Cards -->
-                    <div class="skills-cards">
-                        <div class="skills-grid">
-                            <div class="skill-category">
-                                <h4>Mobile Development</h4>
-                                <div class="tech-stack">
-                                    <div class="tech-icon">
-                                        <svg viewBox="0 0 24 24" class="flutter-icon">
-                                            <path fill="currentColor" d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.357zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.47-6.468 6.47-6.47h-7.37z"/>
-                                        </svg>
-                                        <span>Flutter</span>
-                                    </div>
-                                    <div class="tech-icon"><i class="fas fa-code"></i><span>Dart</span></div>
-                                    <div class="tech-icon"><i class="fab fa-android"></i><span>Android</span></div>
-                                    <div class="tech-icon"><i class="fas fa-code"></i><span>Kotlin</span></div>
-                                    <div class="tech-icon"><i class="fas fa-mobile-alt"></i><span>Jetpack Compose</span></div>
-                                    <div class="tech-icon"><i class="fas fa-code-branch"></i><span>KMP</span></div>
-                                </div>
-                            </div>
-                            <div class="skill-category">
-                                <h4>Backend & Architecture</h4>
-                                <div class="tech-stack">
-                                    <div class="tech-icon"><i class="fas fa-fire"></i><span>Firebase</span></div>
-                                    <div class="tech-icon"><i class="fas fa-server"></i><span>REST API</span></div>
-                                    <div class="tech-icon"><i class="fas fa-sitemap"></i><span>Clean Architecture</span></div>
-                                    <div class="tech-icon"><i class="fas fa-server"></i><span>Ktor</span></div>
-                                    <div class="tech-icon"><i class="fas fa-shield-alt"></i><span>Security</span></div>
-                                </div>
-                            </div>
-                            <div class="skill-category">
-                                <h4>Tools & State Management</h4>
-                                <div class="tech-stack">
-                                    <div class="tech-icon"><i class="fab fa-git-alt"></i><span>Git</span></div>
-                                    <div class="tech-icon"><i class="fas fa-cogs"></i><span>Riverpod</span></div>
-                                    <div class="tech-icon"><i class="fas fa-stream"></i><span>State Flow</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills-work-container">
-                            <div class="skill-category">
-                                <h4>Soft Skills</h4>
-                                <div class="tech-stack">
-                                    <div class="tech-icon"><i class="fas fa-puzzle-piece"></i><span>Problem Solving</span></div>
-                                    <div class="tech-icon"><i class="fas fa-comments"></i><span>Communication</span></div>
-                                    <div class="tech-icon"><i class="fas fa-users"></i><span>Team Collaboration</span></div>
-                                    <div class="tech-icon"><i class="fas fa-handshake"></i><span>Collaboration</span></div>
-                                    <div class="tech-icon"><i class="fas fa-user-tie"></i><span>Leadership</span></div>
-                                    <div class="tech-icon"><i class="fas fa-chess"></i><span>Strategic Thinking</span></div>
-                                </div>
-                            </div>
-                            <div class="skill-category">
-                                <h4>Work Style</h4>
-                                <div class="tech-stack">
-                                    <div class="tech-icon"><i class="fas fa-flag"></i><span>Strong Ownership</span></div>
-                                    <div class="tech-icon"><i class="fas fa-lightbulb"></i><span>Problem Solver</span></div>
-                                    <div class="tech-icon"><i class="fas fa-comments"></i><span>Clear Communication</span></div>
-                                    <div class="tech-icon"><i class="fas fa-rocket"></i><span>Fast Learner</span></div>
-                                    <div class="tech-icon"><i class="fas fa-users"></i><span>Team Player</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Mobile Skills Table -->
-                    <div class="skills-table">
-                        <div class="mobile-skills-grid">
-                            <div class="mobile-skill-category">
-                                <h3>Skills</h3>
-                                <table class="skill-list">
-                                    <tr><td>Flutter</td></tr>
-                                    <tr><td>Dart</td></tr>
-                                    <tr><td>Android</td></tr>
-                                    <tr><td>Kotlin</td></tr>
-                                    <tr><td>Jetpack Compose</td></tr>
-                                    <tr><td>KMP</td></tr>
-                                </table>
-                            </div>
-                            <div class="mobile-skill-category">
-                                <h3>Technologies</h3>
-                                <table class="skill-list">
-                                    <tr><td>Firebase</td></tr>
-                                    <tr><td>REST API</td></tr>
-                                    <tr><td>Clean Architecture</td></tr>
-                                    <tr><td>Ktor</td></tr>
-                                    <tr><td>Security</td></tr>
-                                    <tr><td>Git</td></tr>
-                                    <tr><td>Riverpod</td></tr>
-                                    <tr><td>State Flow</td></tr>
-                                </table>
-                            </div>
-                            <div class="mobile-skill-category">
-                                <h3>Soft Skills</h3>
-                                <table class="skill-list">
-                                    <tr><td>Problem Solving</td></tr>
-                                    <tr><td>Communication</td></tr>
-                                    <tr><td>Team Collaboration</td></tr>
-                                    <tr><td>Leadership</td></tr>
-                                    <tr><td>Strategic Thinking</td></tr>
-                                </table>
-                            </div>
-                            <div class="mobile-skill-category">
-                                <h3>Work Style</h3>
-                                <table class="skill-list">
-                                    <tr><td>Strong Ownership</td></tr>
-                                    <tr><td>Fast Learner</td></tr>
-                                    <tr><td>Attention to detail</td></tr>
-                                    <tr><td>Team Player</td></tr>
-                                </table>
-                            </div>
+                        <p>I am Laraib. A Flutter developer with a strong focus on creating beautiful, performant, and maintainable mobile applications.
+                            With extensive experience in both Flutter and native Android development, I specialize
+                            in building cross-platform solutions that deliver exceptional user experiences.
+                            Currently working with TEO International in Islamabad Pakistan
+                        </p>
 
-                        </div>
+                        <p>Apart from that, a big foodie. If not coding, you will find me eating something.</p>
                     </div>
                 </div>
             </div>
@@ -177,8 +91,58 @@
             <div class="project-list">
                 <div class="project-card">
                     <div class="project-images">
-                        <img src="project1_1.png" alt="Project 1 Screenshot 1">
-                        <img src="project1_2.png" alt="Project 1 Screenshot 2">
+                        <div class="phone-mockup">
+                            <div class="phone-frame">
+                                <div class="phone-notch"></div>
+                                <div class="phone-screen">
+                                    <div class="image-carousel" data-carousel="0">
+                                        <img src="project4_2.png" alt="Project 1 Screenshot 1" class="carousel-image active">
+                                        <img src="project4_1.png" alt="Project 1 Screenshot 2" class="carousel-image">
+                                    </div>
+                                </div>
+                                <div class="phone-home-indicator"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="nav-arrow nav-prev" onclick="prevSlide(0)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="nav-arrow nav-next" onclick="nextSlide(0)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Tolkdanmark App</h3>
+                        <p>A cross-platform mobile app for Tolkdanmark ApS, designed for interpreters and customers. Interpreters can log in to view, approve, reject, or bid on interpreting assignments with full details of time, location, and department. Built with Flutter and integrated with REST APIs for real-time task management.</p>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.tolkdanmark.live&hl=en" class="btn">Play Store</a>
+                            <a href="https://apps.apple.com/pk/app/tolkdanmark-ny/id6753168510" class="btn">App Store</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-images">
+                        <div class="phone-mockup">
+                            <div class="phone-frame">
+                                <div class="phone-notch"></div>
+                                <div class="phone-screen">
+                                    <div class="image-carousel" data-carousel="1">
+                                        <img src="project1_1.png" alt="Project 2 Screenshot 1" class="carousel-image active">
+                                        <img src="project1_2.png" alt="Project 2 Screenshot 2" class="carousel-image">
+                                    </div>
+                                </div>
+                                <div class="phone-home-indicator"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="nav-arrow nav-prev" onclick="prevSlide(1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="nav-arrow nav-next" onclick="nextSlide(1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="project-info">
                         <h3>Feedback App</h3>
@@ -191,7 +155,17 @@
                 </div>
                 <div class="project-card">
                     <div class="project-images">
-                        <img src="project2_1.png" alt="Project 2 Screenshot 1">
+                        <div class="phone-mockup">
+                            <div class="phone-frame">
+                                <div class="phone-notch"></div>
+                                <div class="phone-screen">
+                                    <div class="image-carousel" data-carousel="2">
+                                        <img src="project2_1.png" alt="Project 3 Screenshot 1" class="carousel-image active">
+                                    </div>
+                                </div>
+                                <div class="phone-home-indicator"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="project-info">
                         <h3>Land Surveying App</h3>
@@ -207,8 +181,26 @@
                 </div>
                 <div class="project-card">
                     <div class="project-images">
-                        <img src="project3_1.png" alt="Project 3 Screenshot 1">
-                        <img src="project3_2.png" alt="Project 3 Screenshot 2">
+                        <div class="phone-mockup">
+                            <div class="phone-frame">
+                                <div class="phone-notch"></div>
+                                <div class="phone-screen">
+                                    <div class="image-carousel" data-carousel="3">
+                                        <img src="project3_1.png" alt="Project 4 Screenshot 1" class="carousel-image active">
+                                        <img src="project3_2.png" alt="Project 4 Screenshot 2" class="carousel-image">
+                                    </div>
+                                </div>
+                                <div class="phone-home-indicator"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="nav-arrow nav-prev" onclick="prevSlide(3)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="nav-arrow nav-next" onclick="nextSlide(3)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="project-info">
                         <h3>Retail Shelf Rental App</h3>
@@ -271,31 +263,18 @@
                 <h2>Get In Touch</h2>
                 <div class="contact-content">
                     <div class="contact-info">
-                        <div class="contact-card">
+                        <a href="https://www.linkedin.com/in/laraib-ishtiaq/" target="_blank" class="contact-icon-link" title="LinkedIn">
                             <i class="fab fa-linkedin"></i>
-                            <h3>LinkedIn</h3>
-                            <p>Connect with me on LinkedIn</p>
-                            <a href="https://www.linkedin.com/in/laraib-ishtiaq/" target="_blank" class="contact-link">View Profile</a>
-                        </div>
-                        <div class="contact-card">
+                        </a>
+                        <a href="https://github.com/LaraibIshtiaq" target="_blank" class="contact-icon-link" title="GitHub">
                             <i class="fab fa-github"></i>
-                            <h3>GitHub</h3>
-                            <p>Check out my projects</p>
-                            <a href="https://github.com/LaraibIshtiaq" target="_blank" class="contact-link">View Projects</a>
-                        </div>
-                        <div class="contact-card">
+                        </a>
+                        <a href="mailto:laraibishtiaq@gmail.com" class="contact-icon-link" title="Email">
                             <i class="fas fa-envelope"></i>
-                            <h3>Email</h3>
-                            <p>laraibishtiaq@gmail.com</p>
-                            <a href="mailto:laraibishtiaq@gmail.com" class="contact-link">Send Email</a>
-                        </div>
-                        <div class="contact-card">
+                        </a>
+                        <a href="https://wa.me/923365775478" target="_blank" class="contact-icon-link" title="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
-                            <h3>WhatsApp</h3>
-                            <p>+92 336 5775478</p>
-                            <a href="https://wa.me/923365775478" target="_blank" class="contact-link">Chat on WhatsApp</a>
-                        </div>
-                        
+                        </a>
                     </div>
                     <div class="contact-illustration">
                         <div class="floating-elements">
@@ -314,9 +293,25 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Laraib. All rights reserved.</p>
-    </footer>
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <div class="nav-item" data-section="home">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        <div class="nav-item" data-section="about">
+            <i class="fas fa-user"></i>
+            <span>About</span>
+        </div>
+        <div class="nav-item" data-section="projects">
+            <i class="fas fa-briefcase"></i>
+            <span>Work</span>
+        </div>
+        <div class="nav-item" data-section="contact">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+        </div>
+    </nav>
 
     <script src="script.js"></script>
 </body>
