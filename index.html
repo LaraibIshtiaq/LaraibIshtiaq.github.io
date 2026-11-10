@@ -3,316 +3,433 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Laraib - Flutter & Kotlin Multiplatform Developer Portfolio">
-    <title>Laraib - Mobile App Developer</title>
+    <meta name="description" content="Laraib Ishtiaq, Flutter and Android developer based in Islamabad, Pakistan.">
+    <meta name="theme-color" content="#f5f1ea">
+    <meta property="og:title" content="Laraib Ishtiaq | Mobile App Developer">
+    <meta property="og:description" content="Flutter and Android developer based in Islamabad.">
+    <meta property="og:image" content="LaraibIshtiaq.jpeg">
+    <title>Laraib Ishtiaq | Mobile App Developer</title>
+
+    <script>
+        // Apply saved theme before paint to avoid a flash
+        document.documentElement.classList.add('js');
+        try {
+            const t = localStorage.getItem('theme');
+            if (t) document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Scroll Progress Indicator -->
-    <div class="scroll-progress"></div>
-    
-    <!-- Floating Particles -->
-    <div class="particles-container">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div>
+    <!-- ============ NAV ============ -->
+    <header class="nav-wrap">
+        <nav class="nav" aria-label="Primary">
+            <a href="#home" class="nav-logo">Laraib</a>
+            <ul class="nav-links">
+                <li><a href="#apps" data-section="apps">Apps</a></li>
+                <li><a href="#work" data-section="work">Work</a></li>
+                <li><a href="#ai" data-section="ai">AI</a></li>
+                <li class="nav-about"><a href="#about" data-section="about">About</a></li>
+                <li><a href="#contact" data-section="contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+            </button>
+        </nav>
+    </header>
 
     <main>
+        <!-- ============ HERO ============ -->
         <section id="home" class="hero">
-            <div class="hero-content">
-                <div class="profile-container">
-                    <div class="profile-image">
-                        <div class="profile-ring"></div>
-                        <img src="LaraibIshtiaq.jpeg" alt="Laraib Ishtiaq" />
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow reveal"><span class="dot"></span> Open to new work</p>
+                    <h1 class="hero-title reveal">
+                        Hi, I'm Laraib.<br>I make <em>mobile&nbsp;apps</em>.
+                    </h1>
+                    <p class="hero-lead reveal">
+                        I'm a Flutter and Android developer at TEO International in Islamabad.
+                        I've been building apps for over four years, and a couple of them are
+                        now on Google Play and the App Store. Lately I've also been learning AI engineering
+                        and writing about it.
+                    </p>
+                    <div class="hero-actions reveal">
+                        <a href="#apps" class="btn btn-primary">See my apps <i class="fa-solid fa-arrow-down"></i></a>
+                        <a href="#contact" class="btn btn-ghost">Contact me</a>
                     </div>
-                    <div class="profile-text">
-                        <h1><span class="typing-text">Hi, I'm Laraib 👋</span></h1>
-                        <h2 class="gradient-text">Flutter & Android Developer</h2>
-                        <p class="fade-in-text">
-                            I craft clean, efficient, and scalable mobile apps using <strong>Flutter</strong> and <strong>Android</strong>. 
-                            With 4+ years of experience, I specialize in building cross-platform applications that run seamlessly on Android, iOS, and even desktop.
-                        </p>
-                    
-                        <p class="fade-in-text">
-                            Let's build something amazing together.
-                        </p>
+                    <dl class="hero-stats reveal">
+                        <div><dt>4+</dt><dd>years in mobile development</dd></div>
+                        <div><dt>2</dt><dd>apps on both stores</dd></div>
+                        <div><dt>Flutter &amp; Kotlin</dt><dd>what I use most</dd></div>
+                    </dl>
+                </div>
+
+                <div class="hero-portrait reveal">
+                    <div class="portrait-frame">
+                        <img src="LaraibIshtiaq.jpeg" alt="Portrait of Laraib Ishtiaq" width="960" height="998">
+                    </div>
+                    <div class="portrait-badge badge-top">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <span>Flutter · Kotlin</span>
+                    </div>
+                    <div class="portrait-badge badge-bottom">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Islamabad, Pakistan</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="about">
+        <!-- ============ PUBLISHED APPS ============ -->
+        <section id="apps" class="section">
             <div class="container">
-                <h2>About Me</h2>
-                <div class="about-content">
-                    <div class="floating-graphic graphic-1">
-                        <i class="fab fa-flutter"></i>
+                <header class="section-head reveal">
+                    <span class="section-index">01</span>
+                    <div>
+                        <h2>Published apps</h2>
+                        <p>These are live right now, so feel free to download them.</p>
                     </div>
-                    <div class="floating-graphic graphic-2">
-                        <i class="fab fa-android"></i>
+                </header>
+
+                <!-- Tolkdanmark -->
+                <article class="app-feature reveal" style="--app-accent:#b12f36; --app-tint:#f9e3e4;">
+                    <div class="app-visual">
+                        <div class="shot-stack">
+                            <img src="project4_2.png" alt="Tolkdanmark login screen" class="shot shot-back" loading="lazy">
+                            <img src="project4_1.png" alt="Tolkdanmark interpreter dashboard" class="shot shot-front" loading="lazy">
+                        </div>
                     </div>
-                    <div class="floating-graphic graphic-3">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="floating-graphic graphic-4">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div class="floating-graphic graphic-5">
-                        <i class="fab fa-java"></i>
-                    </div>
-                    <div class="floating-graphic graphic-6">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    
-                    <div class="about-text">
-                        <p>I am Laraib. A Flutter developer with a strong focus on creating beautiful, performant, and maintainable mobile applications.
-                            With extensive experience in both Flutter and native Android development, I specialize
-                            in building cross-platform solutions that deliver exceptional user experiences.
-                            Currently working with TEO International in Islamabad Pakistan
+                    <div class="app-info">
+                        <div class="app-meta">
+                            <span class="app-icon"><i class="fa-solid fa-language"></i></span>
+                            <div>
+                                <h3>Tolkdanmark</h3>
+                                <span class="app-sub">Interpreting · Denmark</span>
+                            </div>
+                        </div>
+                        <p>
+                            I built this for Tolkdanmark ApS, an interpreting company in Denmark. Interpreters use it
+                            to see their assignments (time, place and department) and approve, reject or bid on them.
+                            Customers log in through the same app. It's made with Flutter and talks to their REST API.
                         </p>
-
-                        <p>Apart from that, a big foodie. If not coding, you will find me eating something.</p>
+                        <ul class="tags">
+                            <li>Flutter</li><li>REST API</li><li>Android</li><li>iOS</li>
+                        </ul>
+                        <div class="store-buttons">
+                            <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.tolkdanmark.live" target="_blank" rel="noopener">
+                                <i class="fa-brands fa-google-play"></i>
+                                <span><small>Get it on</small>Google Play</span>
+                            </a>
+                            <a class="store-btn" href="https://apps.apple.com/us/app/tolkdanmark-ny/id6753168510" target="_blank" rel="noopener">
+                                <i class="fa-brands fa-apple"></i>
+                                <span><small>Download on the</small>App Store</span>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </article>
+
+                <!-- DanTaxi -->
+                <article class="app-feature app-feature--flip reveal" style="--app-accent:#e0a800; --app-tint:#fff4cc;">
+                    <div class="app-visual">
+                        <!-- Add screenshots (e.g. dantaxi_1.png, dantaxi_2.png) and replace this placeholder with a .shot-stack like Tolkdanmark's -->
+                        <div class="app-placeholder">
+                            <div class="placeholder-road"></div>
+                            <div class="placeholder-icon"><i class="fa-solid fa-taxi"></i></div>
+                            <span class="placeholder-label">DanTaxi</span>
+                        </div>
+                    </div>
+                    <div class="app-info">
+                        <div class="app-meta">
+                            <span class="app-icon"><i class="fa-solid fa-taxi"></i></span>
+                            <div>
+                                <h3>DanTaxi</h3>
+                                <span class="app-sub">Taxi booking · Denmark</span>
+                            </div>
+                        </div>
+                        <p>
+                            A taxi booking app for DanTaxi in Denmark. It's available on both Android and iOS.
+                        </p>
+                        <ul class="tags">
+                            <li>Taxi booking</li><li>Android</li><li>iOS</li>
+                        </ul>
+                        <div class="store-buttons">
+                            <a class="store-btn" href="https://play.google.com/store/apps/details?id=dk.dantaxi.app" target="_blank" rel="noopener">
+                                <i class="fa-brands fa-google-play"></i>
+                                <span><small>Get it on</small>Google Play</span>
+                            </a>
+                            <a class="store-btn" href="https://apps.apple.com/us/app/dantaxi-taxi-booking/id1456754381" target="_blank" rel="noopener">
+                                <i class="fa-brands fa-apple"></i>
+                                <span><small>Download on the</small>App Store</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
 
-        <section id="projects" class="projects">
-            <h2>Featured Projects</h2>
-            <div class="project-list">
-                <div class="project-card">
-                    <div class="project-images">
-                        <div class="phone-mockup">
-                            <div class="phone-frame">
-                                <div class="phone-notch"></div>
-                                <div class="phone-screen">
-                                    <div class="image-carousel" data-carousel="0">
-                                        <img src="project4_2.png" alt="Project 1 Screenshot 1" class="carousel-image active">
-                                        <img src="project4_1.png" alt="Project 1 Screenshot 2" class="carousel-image">
-                                    </div>
-                                </div>
-                                <div class="phone-home-indicator"></div>
-                            </div>
-                        </div>
-                        <div class="carousel-nav">
-                            <button class="nav-arrow nav-prev" onclick="prevSlide(0)">
-                                <i class="fas fa-chevron-left"></i>
-                            </button>
-                            <button class="nav-arrow nav-next" onclick="nextSlide(0)">
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Tolkdanmark App</h3>
-                        <p>A cross-platform mobile app for Tolkdanmark ApS, designed for interpreters and customers. Interpreters can log in to view, approve, reject, or bid on interpreting assignments with full details of time, location, and department. Built with Flutter and integrated with REST APIs for real-time task management.</p>
-                        <div class="project-links">
-                            <a href="https://play.google.com/store/apps/details?id=com.tolkdanmark.live&hl=en" class="btn">Play Store</a>
-                            <a href="https://apps.apple.com/pk/app/tolkdanmark-ny/id6753168510" class="btn">App Store</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-images">
-                        <div class="phone-mockup">
-                            <div class="phone-frame">
-                                <div class="phone-notch"></div>
-                                <div class="phone-screen">
-                                    <div class="image-carousel" data-carousel="1">
-                                        <img src="project1_1.png" alt="Project 2 Screenshot 1" class="carousel-image active">
-                                        <img src="project1_2.png" alt="Project 2 Screenshot 2" class="carousel-image">
-                                    </div>
-                                </div>
-                                <div class="phone-home-indicator"></div>
-                            </div>
-                        </div>
-                        <div class="carousel-nav">
-                            <button class="nav-arrow nav-prev" onclick="prevSlide(1)">
-                                <i class="fas fa-chevron-left"></i>
-                            </button>
-                            <button class="nav-arrow nav-next" onclick="nextSlide(1)">
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Feedback App</h3>
-                        <p>It is an app designed and developed to help ease customers to provider their valuable feedbacks to organisations,
-                            which is developed in Flutter supporting android, iOS and web.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/LaraibIshtiaq/feedback_system?tab=readme-ov-file" class="btn">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-images">
-                        <div class="phone-mockup">
-                            <div class="phone-frame">
-                                <div class="phone-notch"></div>
-                                <div class="phone-screen">
-                                    <div class="image-carousel" data-carousel="2">
-                                        <img src="project2_1.png" alt="Project 3 Screenshot 1" class="carousel-image active">
-                                    </div>
-                                </div>
-                                <div class="phone-home-indicator"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Land Surveying App</h3>
-                        <p>A Flutter-based mobile app designed to control high-precision outdoor robots
-                            for tasks like marking, measurement, and stake-out. It integrates
-                            real-time robot communication, map drawing tools, and coordinate
-                            projection handling (UTM ↔ WGS84) for seamless on-site operations.
-                            Tech Stack: Flutter, Google Maps, Proj4, Bluetooth, Custom Robotics SDK</p>
-                            <div class="project-links">
-                                <a href="https://github.com/LaraibIshtiaq/feedback_system?tab=readme-ov-file" class="btn">Source Code</a>
-                            </div>
-                        </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-images">
-                        <div class="phone-mockup">
-                            <div class="phone-frame">
-                                <div class="phone-notch"></div>
-                                <div class="phone-screen">
-                                    <div class="image-carousel" data-carousel="3">
-                                        <img src="project3_1.png" alt="Project 4 Screenshot 1" class="carousel-image active">
-                                        <img src="project3_2.png" alt="Project 4 Screenshot 2" class="carousel-image">
-                                    </div>
-                                </div>
-                                <div class="phone-home-indicator"></div>
-                            </div>
-                        </div>
-                        <div class="carousel-nav">
-                            <button class="nav-arrow nav-prev" onclick="prevSlide(3)">
-                                <i class="fas fa-chevron-left"></i>
-                            </button>
-                            <button class="nav-arrow nav-next" onclick="nextSlide(3)">
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Retail Shelf Rental App</h3>
-                        <p>A native Android app built using Jetpack Compose and Kotlin, designed
-                            to help store owners manage and rent shelf space to vendors. The
-                            app streamlines rental tracking, shelf assignments, and vendor interactions.
-                            It features interactive charts and graphs for visualizing rental
-                            durations, earnings, and shelf occupancy trends—empowering users
-                            with actionable insights through a clean and modern UI.
-                            Tech Stack: Kotlin, Jetpack Compose, Android Architecture Components,
-                            MPAndroidChart</p>
-                            <div class="project-links">
-                                <a href="https://github.com/LaraibIshtiaq/feedback_system?tab=readme-ov-file" class="btn">Source Code</a>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="side-projects" class="side-projects">
-            <h2>Side Projects</h2>
-            <div class="side-projects-grid">
-                <div class="side-project-card">
-                    <div class="side-project-icon">
-                        <i class="fab fa-flutter"></i>
-                    </div>
-                    <div class="side-project-content">
-                        <h3>Task Tracker App</h3>
-                        <p class="tech-stack">Flutter</p>
-                        <p>Designed and developed a task tracker app in flutter to help manage tasks with a beautiful UI.</p>
-                    </div>
-                </div>
-
-                <div class="side-project-card">
-                    <div class="side-project-icon">
-                        <i class="fab fa-android"></i>
-                    </div>
-                    <div class="side-project-content">
-                        <h3>Task App</h3>
-                        <p class="tech-stack">Android - Compose - Ktor</p>
-                        <p>Designed and developed a cross-platform task management app as a hands-on learning project to apply Ktor (backend) and Jetpack Compose (UI) concepts.</p>
-                    </div>
-                </div>
-
-                <div class="side-project-card">
-                    <div class="side-project-icon">
-                        <i class="fab fa-flutter"></i>
-                    </div>
-                    <div class="side-project-content">
-                        <h3>Job Portal App</h3>
-                        <p class="tech-stack">Flutter</p>
-                        <p>Developed a fully functional job portal mobile app as part of a university capstone project, targeting both job seekers and employers.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
+        <!-- ============ SELECTED WORK ============ -->
+        <section id="work" class="section section-alt">
             <div class="container">
-                <h2>Get In Touch</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <a href="https://www.linkedin.com/in/laraib-ishtiaq/" target="_blank" class="contact-icon-link" title="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/LaraibIshtiaq" target="_blank" class="contact-icon-link" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:laraibishtiaq@gmail.com" class="contact-icon-link" title="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="https://wa.me/923365775478" target="_blank" class="contact-icon-link" title="WhatsApp">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
+                <header class="section-head reveal">
+                    <span class="section-index">02</span>
+                    <div>
+                        <h2>Other work</h2>
+                        <p>A few client projects in Flutter and native Android.</p>
                     </div>
-                    <div class="contact-illustration">
-                        <div class="floating-elements">
-                            <i class="fab fa-flutter"></i>
-                            <i class="fab fa-android"></i>
-                            <i class="fas fa-code"></i>
-                            <i class="fas fa-mobile-alt"></i>
+                </header>
+
+                <div class="work-grid">
+                    <article class="work-card work-card--wide reveal">
+                        <div class="work-media work-media--landscape">
+                            <img src="project2_1.png" alt="Land surveying app showing a robot on a satellite map" loading="lazy">
                         </div>
-                        <div class="contact-message">
-                            <h3>Let's Build Something Amazing Together!</h3>
-                            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                        <div class="work-body">
+                            <span class="work-kicker">Flutter · Robotics</span>
+                            <h3>Land Surveying App</h3>
+                            <p>
+                                A tablet app for controlling outdoor survey robots that mark and measure points on site.
+                                It talks to the robot in real time, lets you draw jobs on a map, and converts coordinates
+                                between UTM and WGS84.
+                            </p>
+                            <ul class="tags">
+                                <li>Flutter</li><li>Google Maps</li><li>Proj4</li><li>Bluetooth</li><li>Robotics SDK</li>
+                            </ul>
                         </div>
+                    </article>
+
+                    <article class="work-card reveal">
+                        <div class="work-media">
+                            <div class="carousel" data-carousel>
+                                <img src="project1_1.png" alt="Feedback app calendar screen" class="active" loading="lazy">
+                                <img src="project1_2.png" alt="Feedback app second screen" loading="lazy">
+                            </div>
+                            <div class="carousel-dots" aria-hidden="true"></div>
+                        </div>
+                        <div class="work-body">
+                            <span class="work-kicker">Flutter</span>
+                            <h3>Feedback App</h3>
+                            <p>
+                                An app that lets customers leave feedback for a business. One Flutter codebase for
+                                Android, iOS and the web.
+                            </p>
+                            <a href="https://github.com/LaraibIshtiaq/feedback_system" class="text-link" target="_blank" rel="noopener">
+                                View source <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="work-card reveal">
+                        <div class="work-media">
+                            <div class="carousel" data-carousel>
+                                <img src="project3_1.png" alt="Retail shelf rental app balance screen" class="active" loading="lazy">
+                                <img src="project3_2.png" alt="Retail shelf rental app second screen" loading="lazy">
+                            </div>
+                            <div class="carousel-dots" aria-hidden="true"></div>
+                        </div>
+                        <div class="work-body">
+                            <span class="work-kicker">Kotlin · Jetpack Compose</span>
+                            <h3>Retail Shelf Rental</h3>
+                            <p>
+                                A native Android app for shops that rent out shelf space to vendors. Store owners can
+                                track rentals, assign shelves, and see earnings and occupancy in charts.
+                            </p>
+                            <ul class="tags">
+                                <li>Kotlin</li><li>Compose</li><li>MPAndroidChart</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <h3 class="subhead reveal">Side projects</h3>
+                <div class="side-grid">
+                    <article class="side-card reveal">
+                        <span class="side-num">a</span>
+                        <h4>Task Tracker</h4>
+                        <span class="work-kicker">Flutter</span>
+                        <p>A simple Flutter app for keeping track of tasks.</p>
+                    </article>
+                    <article class="side-card reveal">
+                        <span class="side-num">b</span>
+                        <h4>Task App</h4>
+                        <span class="work-kicker">Compose · Ktor</span>
+                        <p>I made this to learn Ktor and Jetpack Compose together.</p>
+                    </article>
+                    <article class="side-card reveal">
+                        <span class="side-num">c</span>
+                        <h4>Job Portal</h4>
+                        <span class="work-kicker">Flutter</span>
+                        <p>My final year project at university. A job portal for both job seekers and employers.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ AI ============ -->
+        <section id="ai" class="section">
+            <div class="container">
+                <header class="section-head reveal">
+                    <span class="section-index">03</span>
+                    <div>
+                        <h2>AI engineering</h2>
+                        <p>In June 2026 I started learning AI engineering alongside my mobile work. I write about what I build and what I learn on Medium.</p>
+                    </div>
+                </header>
+
+                <div class="writing-head reveal">
+                    <h3 class="subhead">Selected articles</h3>
+                    <a href="https://medium.com/@ilaraib.096" class="text-link" target="_blank" rel="noopener">All posts on Medium <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <ul class="article-list reveal">
+                    <li>
+                        <a class="article-row" href="https://medium.com/@ilaraib.096/building-guardrails-for-enterprise-ai-keeping-ai-systems-safe-and-reliable-99e6b660c21e" target="_blank" rel="noopener">
+                            <span class="article-date">Aug 2026</span>
+                            <span class="article-title">Building Guardrails for Enterprise AI: Keeping AI Systems Safe and Reliable</span>
+                            <span class="article-tag">Guardrails</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square article-arrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="article-row" href="https://medium.com/@ilaraib.096/beyond-accuracy-reducing-token-costs-in-agentic-ai-b93d79d28858" target="_blank" rel="noopener">
+                            <span class="article-date">Jul 2026</span>
+                            <span class="article-title">Beyond Accuracy: Reducing Token Costs in Agentic AI</span>
+                            <span class="article-tag">Agentic AI</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square article-arrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="article-row" href="https://medium.com/@ilaraib.096/agentic-ai-for-internal-tools-connecting-natural-language-to-employee-management-apis-0d6c325ef7d1" target="_blank" rel="noopener">
+                            <span class="article-date">Jun 2026</span>
+                            <span class="article-title">Agentic AI for Internal Tools: Connecting Natural Language to Employee Management APIs</span>
+                            <span class="article-tag">Agentic AI</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square article-arrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="article-row" href="https://medium.com/@ilaraib.096/from-script-to-system-building-a-rag-pipeline-with-langchain-gradio-and-prefect-01610adcc7bd" target="_blank" rel="noopener">
+                            <span class="article-date">Jun 2026</span>
+                            <span class="article-title">From Script to System: Building a RAG Pipeline with LangChain, Gradio, and Prefect</span>
+                            <span class="article-tag">RAG</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square article-arrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <h3 class="subhead reveal">Certificates</h3>
+                <div class="cert-grid">
+                    <a class="cert-card reveal" href="https://drive.google.com/file/d/1_4pqe74jSTyaX3ocq38Md8lCi-JU3B4k/view" target="_blank" rel="noopener">
+                        <span class="cert-icon"><i class="fa-solid fa-award"></i></span>
+                        <h4>Generative AI Development for Developers</h4>
+                        <span class="text-link">View certificate <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a class="cert-card reveal" href="https://drive.google.com/file/d/1-MuEhZZobeRlGmnGrN0MRuAXQVM3L1IO/view" target="_blank" rel="noopener">
+                        <span class="cert-icon"><i class="fa-solid fa-award"></i></span>
+                        <h4>Mastering Retrieval-Augmented Generation</h4>
+                        <span class="text-link">View certificate <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a class="cert-card reveal" href="https://drive.google.com/file/d/1eOkW26X1agH8v8t3XnsiIY4M7iM_5w2I/view" target="_blank" rel="noopener">
+                        <span class="cert-icon"><i class="fa-solid fa-award"></i></span>
+                        <h4>The AI Engineer Course 2026</h4>
+                        <span class="text-link">View certificate <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section id="about" class="section">
+            <div class="container">
+                <header class="section-head reveal">
+                    <span class="section-index">04</span>
+                    <div>
+                        <h2>About me</h2>
+                    </div>
+                </header>
+
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p class="about-lead">
+                            I like building apps that are nice to use and easy to maintain.
+                        </p>
+                        <p>
+                            Most of my work is in Flutter, and I also do native Android with Kotlin and Jetpack Compose.
+                            Right now I'm at <strong>TEO International</strong> in Islamabad, working on apps for
+                            clients in Denmark.
+                        </p>
+                        <p>
+                            Since mid-2026 I've also been learning AI engineering: RAG pipelines, agents, and guardrails.
+                            I write about it on <a href="https://medium.com/@ilaraib.096" target="_blank" rel="noopener" class="inline-link">Medium</a>.
+                        </p>
+                        <p>
+                            Outside of work I'm a big foodie. If I'm not coding, I'm probably eating.
+                        </p>
+                    </div>
+
+                    <div class="skills reveal">
+                        <div class="skill-group">
+                            <h4>Mobile</h4>
+                            <ul class="chips">
+                                <li>Flutter</li><li>Dart</li><li>Kotlin</li><li>Jetpack Compose</li>
+                                <li>Kotlin Multiplatform</li><li>Java</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Backend &amp; data</h4>
+                            <ul class="chips">
+                                <li>REST APIs</li><li>Ktor</li><li>Bluetooth</li><li>Google Maps</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h4>AI</h4>
+                            <ul class="chips">
+                                <li>RAG</li><li>Agentic AI</li><li>LangChain</li><li>Gradio</li><li>Prefect</li><li>Guardrails</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Other</h4>
+                            <ul class="chips">
+                                <li>Clean architecture</li><li>Play Store &amp; App Store releases</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <span class="section-index">05</span>
+                    <h2>Want to <em>work</em> together?</h2>
+                    <p>I'm happy to talk about new projects or job opportunities. Email is the best way to reach me.</p>
+                    <a href="mailto:ilaraib.096@gmail.com" class="contact-email">
+                        ilaraib.096@gmail.com <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <div class="socials">
+                        <a href="https://www.linkedin.com/in/laraib-ishtiaq/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                        <a href="https://github.com/LaraibIshtiaq" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://medium.com/@ilaraib.096" target="_blank" rel="noopener" aria-label="Medium"><i class="fa-brands fa-medium"></i> Medium</a>
+                        <a href="https://wa.me/923058713066" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Bottom Navigation -->
-    <nav class="bottom-nav">
-        <div class="nav-item" data-section="home">
-            <i class="fas fa-home"></i>
-            <span>Home</span>
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>© <span id="year"></span> Laraib Ishtiaq</span>
+            <a href="#home">Back to top <i class="fa-solid fa-arrow-up"></i></a>
         </div>
-        <div class="nav-item" data-section="about">
-            <i class="fas fa-user"></i>
-            <span>About</span>
-        </div>
-        <div class="nav-item" data-section="projects">
-            <i class="fas fa-briefcase"></i>
-            <span>Work</span>
-        </div>
-        <div class="nav-item" data-section="contact">
-            <i class="fas fa-envelope"></i>
-            <span>Contact</span>
-        </div>
-    </nav>
+    </footer>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>

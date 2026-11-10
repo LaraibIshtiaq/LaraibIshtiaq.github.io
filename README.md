@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing my work as a Flutter & Android
 
 ## Features
 
-- 🎨 Modern and clean design
+- 🎨 Warm editorial design with light & dark mode
 - 📱 Fully responsive layout
 - 🚀 Smooth animations and transitions
 - 🎯 Interactive project slider
@@ -13,24 +13,14 @@ A modern, responsive portfolio website showcasing my work as a Flutter & Android
 
 ## Sections
 
-1. **Hero Section**
-   - Professional introduction
-   - Profile image
-   - Call-to-action button
-
-2. **About Me**
-   - Professional summary
-   - Technical skills
-   - Soft skills
-   - Work style
-
-3. **Projects**
-   - Featured projects slider
-   - Project details and screenshots
-   - Technology stack
-   - Source code links
-
-4. **Contact**
+1. **Hero**: introduction, portrait, quick stats
+2. **Published apps**: published apps with Google Play / App Store links
+   - Tolkdanmark: [Google Play](https://play.google.com/store/apps/details?id=com.tolkdanmark.live) · [App Store](https://apps.apple.com/us/app/tolkdanmark-ny/id6753168510)
+   - DanTaxi: [Google Play](https://play.google.com/store/apps/details?id=dk.dantaxi.app) · [App Store](https://apps.apple.com/us/app/dantaxi-taxi-booking/id1456754381)
+3. **Other work**: client projects and side projects with screenshots
+4. **AI engineering**: Medium articles and certificates
+5. **About**: summary and skills
+6. **Contact**
    - LinkedIn profile
    - GitHub repository
    - Email contact
@@ -48,8 +38,9 @@ A modern, responsive portfolio website showcasing my work as a Flutter & Android
 
 - **LinkedIn:** [Laraib Ishtiaq](https://www.linkedin.com/in/laraib-ishtiaq/)
 - **GitHub:** [LaraibIshtiaq](https://github.com/LaraibIshtiaq)
-- **Email:** laraibishtiaq@gmail.com
-- **WhatsApp:** +92 336 5775478
+- **Medium:** [@ilaraib.096](https://medium.com/@ilaraib.096)
+- **Email:** ilaraib.096@gmail.com
+- **WhatsApp:** +92 305 8713066
 
 ## Setup
 
