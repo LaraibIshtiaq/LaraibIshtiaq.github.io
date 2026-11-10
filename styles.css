@@ -1,24 +1,24 @@
 /* =========================================================
    Laraib Ishtiaq — Portfolio
-   Warm editorial theme with light / dark modes
+   Plum & Rose theme with light / dark modes
    ========================================================= */
 
 :root {
-    --bg: #f5f1ea;
-    --bg-alt: #ede7dc;
-    --surface: #fffdf9;
-    --ink: #1b1815;
-    --ink-soft: #3d3732;
-    --muted: #756c62;
-    --line: #e2d9cb;
-    --accent: #c4532a;
-    --accent-soft: #f6dccf;
+    --bg: #faf6f8;
+    --bg-alt: #f2e9ee;
+    --surface: #ffffff;
+    --ink: #24121c;
+    --ink-soft: #46303c;
+    --muted: #7d6672;
+    --line: #ead9e2;
+    --accent: #9b2c66;
+    --accent-soft: #f6dbe8;
     --accent-ink: #ffffff;
-    --shadow-sm: 0 1px 2px rgba(40, 28, 16, 0.06), 0 2px 8px rgba(40, 28, 16, 0.05);
-    --shadow-lg: 0 24px 60px -20px rgba(60, 36, 16, 0.28), 0 8px 20px -8px rgba(60, 36, 16, 0.12);
-    --nav-bg: rgba(255, 253, 249, 0.72);
+    --shadow-sm: 0 1px 2px rgba(50, 18, 36, 0.06), 0 2px 8px rgba(50, 18, 36, 0.05);
+    --shadow-lg: 0 24px 60px -20px rgba(70, 20, 48, 0.28), 0 8px 20px -8px rgba(70, 20, 48, 0.12);
+    --nav-bg: rgba(255, 255, 255, 0.72);
 
-    --serif: "Fraunces", Georgia, "Times New Roman", serif;
+    --serif: "Playfair Display", Georgia, "Times New Roman", serif;
     --sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
 
     --radius: 22px;
@@ -30,37 +30,37 @@
 
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-        --bg: #12100e;
-        --bg-alt: #181513;
-        --surface: #1e1a17;
-        --ink: #f4eee6;
-        --ink-soft: #d8cfc4;
-        --muted: #a2988c;
-        --line: #2f2925;
-        --accent: #ef8a5f;
-        --accent-soft: #3a241a;
-        --accent-ink: #1b1210;
+        --bg: #140b10;
+        --bg-alt: #1b1016;
+        --surface: #22141c;
+        --ink: #f8ebf2;
+        --ink-soft: #dcc6d1;
+        --muted: #a38b97;
+        --line: #35212c;
+        --accent: #f07bb3;
+        --accent-soft: #3d1a2c;
+        --accent-ink: #140b10;
         --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
         --shadow-lg: 0 24px 60px -20px rgba(0, 0, 0, 0.7), 0 8px 20px -8px rgba(0, 0, 0, 0.5);
-        --nav-bg: rgba(30, 26, 23, 0.72);
+        --nav-bg: rgba(34, 20, 28, 0.72);
         color-scheme: dark;
     }
 }
 
 :root[data-theme="dark"] {
-    --bg: #12100e;
-    --bg-alt: #181513;
-    --surface: #1e1a17;
-    --ink: #f4eee6;
-    --ink-soft: #d8cfc4;
-    --muted: #a2988c;
-    --line: #2f2925;
-    --accent: #ef8a5f;
-    --accent-soft: #3a241a;
-    --accent-ink: #1b1210;
+    --bg: #140b10;
+    --bg-alt: #1b1016;
+    --surface: #22141c;
+    --ink: #f8ebf2;
+    --ink-soft: #dcc6d1;
+    --muted: #a38b97;
+    --line: #35212c;
+    --accent: #f07bb3;
+    --accent-soft: #3d1a2c;
+    --accent-ink: #140b10;
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 24px 60px -20px rgba(0, 0, 0, 0.7), 0 8px 20px -8px rgba(0, 0, 0, 0.5);
-    --nav-bg: rgba(30, 26, 23, 0.72);
+    --nav-bg: rgba(34, 20, 28, 0.72);
     color-scheme: dark;
 }
 
@@ -514,14 +514,14 @@ h1 em, h2 em, p em { color: var(--accent); font-family: var(--serif); }
     gap: 12px;
     padding: 10px 20px 10px 16px;
     border-radius: 14px;
-    background: #0f0d0b;
+    background: #1a0d14;
     color: #fff;
-    border: 1px solid #0f0d0b;
+    border: 1px solid #1a0d14;
     transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
 }
-:root[data-theme="dark"] .store-btn { border-color: #3a332d; }
+:root[data-theme="dark"] .store-btn { border-color: #4a2d3c; }
 @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) .store-btn { border-color: #3a332d; }
+    :root:not([data-theme="light"]) .store-btn { border-color: #4a2d3c; }
 }
 .store-btn i { font-size: 24px; width: 24px; text-align: center; }
 .store-btn span { white-space: nowrap; display: flex; flex-direction: column; font-weight: 700; font-size: 16px; line-height: 1.15; }
@@ -811,9 +811,12 @@ h1 em, h2 em, p em { color: var(--accent); font-family: var(--serif); }
 .contact-card .section-index { display: inline-block; margin: 0 0 28px; }
 .contact-card h2 {
     color: var(--bg);
-    font-size: clamp(38px, 5.6vw, 72px);
-    font-weight: 400;
-    margin-bottom: 20px;
+    font-family: var(--sans);
+    font-size: clamp(30px, 4vw, 46px);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+    margin-bottom: 16px;
 }
 .contact-card p { color: color-mix(in srgb, var(--bg) 70%, transparent); max-width: 480px; margin: 0 auto 36px; }
 
@@ -821,9 +824,10 @@ h1 em, h2 em, p em { color: var(--accent); font-family: var(--serif); }
     display: inline-flex;
     align-items: center;
     gap: 14px;
-    font-family: var(--serif);
-    font-size: clamp(20px, 3vw, 30px);
-    padding: 16px 32px;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: clamp(17px, 2.2vw, 22px);
+    padding: 14px 28px;
     border-radius: 999px;
     background: var(--bg);
     color: var(--ink);

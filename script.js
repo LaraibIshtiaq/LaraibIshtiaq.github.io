@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const syncThemeColor = () => {
         const meta = document.querySelector('meta[name="theme-color"]');
-        if (meta) meta.setAttribute('content', currentTheme() === 'dark' ? '#12100e' : '#f5f1ea');
+        if (meta) meta.setAttribute('content', currentTheme() === 'dark' ? '#140b10' : '#faf6f8');
     };
     syncThemeColor();
 
