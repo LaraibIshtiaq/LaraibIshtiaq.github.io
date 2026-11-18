@@ -70,7 +70,7 @@
             text: `My main tools:
                 <ul>
                     <li><b>Mobile</b>: Flutter, Dart, Kotlin, Jetpack Compose, Kotlin Multiplatform, Java</li>
-                    <li><b>Backend &amp; data</b>: REST APIs, Ktor, Bluetooth, Google Maps</li>
+                    <li><b>Backend &amp; data</b>: Python, FastAPI, REST APIs, Ktor, PostgreSQL</li>
                     <li><b>AI</b>: RAG, AI agents, LangChain, LangGraph, Azure OpenAI, FAISS, pgvector, ChromaDB, Ollama, RAGAS</li>
                 </ul>`,
             chips: ['services', 'experience'],
