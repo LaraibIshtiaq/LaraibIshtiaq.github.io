@@ -56,7 +56,7 @@
                     </h1>
                     <p class="hero-lead reveal">
                         I'm a Flutter and Android developer at TEO International in Islamabad.
-                        I've been building apps for over four years, and a couple of them are
+                        I've been building apps for over five years, and a couple of them are
                         now on Google Play and the App Store. Lately I've also been learning AI engineering
                         and writing about it.
                     </p>
@@ -65,7 +65,7 @@
                         <a href="#contact" class="btn btn-ghost">Contact me</a>
                     </div>
                     <dl class="hero-stats reveal">
-                        <div><dt>4+</dt><dd>years in mobile development</dd></div>
+                        <div><dt>5+</dt><dd>years in mobile development</dd></div>
                         <div><dt>2</dt><dd>apps on both stores</dd></div>
                         <div><dt>Flutter &amp; Kotlin</dt><dd>what I use most</dd></div>
                     </dl>
@@ -278,9 +278,78 @@
                     <span class="section-index">03</span>
                     <div>
                         <h2>AI engineering</h2>
-                        <p>In June 2026 I started learning AI engineering alongside my mobile work. I write about what I build and what I learn on Medium.</p>
+                        <p>In June 2026 I started learning AI engineering alongside my mobile work. Here's what I've built so far, and what I've written about it.</p>
                     </div>
                 </header>
+
+                <h3 class="subhead reveal">Projects</h3>
+                <div class="work-grid ai-projects">
+                    <article class="work-card work-card--wide reveal">
+                        <div class="work-body">
+                            <span class="work-kicker">Agentic AI · RAG · In production</span>
+                            <h3>Enterprise HR AI Assistant</h3>
+                            <p>
+                                An AI assistant built into a company's internal employee management platform. Employees ask
+                                in plain English. It answers HR policy questions with cited sources and can look up or act
+                                on their own records.
+                            </p>
+                            <ul class="ai-points">
+                                <li>An LLM router splits each message into intents and sends them to separate read and write agents for each HR area</li>
+                                <li>Policy search combines keyword and FAISS vector retrieval, multi-query rewriting, reranking and parent-chunk expansion</li>
+                                <li>Writes are safe: the assistant recaps the action and waits for a clear "yes", makes at most one write per turn, and every API call runs with the user's own permissions</li>
+                                <li>Streams answers and shows a live reasoning panel in the web app, with chat history</li>
+                                <li>Evaluated with RAGAS, retrieval-recall tests and routing regression suites</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>LangChain</li><li>Azure OpenAI</li><li>FastAPI</li><li>FAISS</li><li>RAGAS</li><li>React</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="work-card reveal">
+                        <div class="work-body">
+                            <span class="work-kicker">LangGraph · Agents</span>
+                            <h3>Agentic RAG with Web Search</h3>
+                            <p>
+                                A ReAct agent that chooses its tool for each question. It searches company policy documents
+                                stored in Postgres with pgvector and cites the source PDF, and it only searches the web when
+                                the documents don't have the answer.
+                            </p>
+                            <ul class="tags">
+                                <li>LangGraph</li><li>pgvector</li><li>Tavily</li><li>OpenAI</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="work-card reveal">
+                        <div class="work-body">
+                            <span class="work-kicker">RAG · Gradio</span>
+                            <h3>Document Q&amp;A App</h3>
+                            <p>
+                                Upload a PDF and ask questions about it. Ingestion and answering are separate LangChain
+                                chains. Embeddings are stored in Postgres with pgvector, and Gradio provides the interface.
+                            </p>
+                            <ul class="tags">
+                                <li>LangChain</li><li>Gradio</li><li>pgvector</li><li>OpenAI</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="work-card reveal">
+                        <div class="work-body">
+                            <span class="work-kicker">Local LLMs · Experiments</span>
+                            <h3>Local vs Cloud RAG</h3>
+                            <p>
+                                The same RAG pipeline run on a local Qwen3 8B model through Ollama and on Azure OpenAI. I used
+                                it to compare answer quality, and simple chunking against semantic chunking, with ChromaDB as
+                                the vector store.
+                            </p>
+                            <ul class="tags">
+                                <li>Ollama</li><li>Qwen3</li><li>ChromaDB</li><li>Azure OpenAI</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
 
                 <div class="writing-head reveal">
                     <h3 class="subhead">Selected articles</h3>
@@ -431,5 +500,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="chatbot.js"></script>
 </body>
 </html>

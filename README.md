@@ -4,7 +4,8 @@ A modern, responsive portfolio website showcasing my work as a Flutter & Android
 
 ## Features
 
-- 🎨 Warm editorial design with light & dark mode
+- 🎨 Plum & Rose design with light & dark mode
+- 💬 Built-in chat assistant (scripted, runs in the browser) that answers questions about services, industries, apps and contact info; edit answers in `chatbot.js`
 - 📱 Fully responsive layout
 - 🚀 Smooth animations and transitions
 - 🎯 Interactive project slider
